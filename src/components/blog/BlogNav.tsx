@@ -20,9 +20,19 @@ const BlogNav = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-lg font-medium gold-text">
-            Future AI Directory
-          </Link>
+          <a 
+            href="https://futureaidirectory.com" 
+            className="flex items-center space-x-2 gold-text"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="/lovable-uploads/c29424c1-fb4d-4c7c-ab38-ff5ad5fa2656.png" 
+              alt="Future AI Directory Logo" 
+              className="h-8 w-8" 
+            />
+            <span className="text-lg font-medium">Future AI Directory</span>
+          </a>
           <div className="flex space-x-1">
             <Link 
               to="/" 
@@ -36,6 +46,14 @@ const BlogNav = () => {
             >
               Blog
             </Link>
+            <a 
+              href="https://solutions.futureaidirectory.com" 
+              className="px-4 py-2 rounded-md hover:bg-gray-900 transition-colors text-white"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Prompt Directory
+            </a>
           </div>
         </div>
       </div>
