@@ -21,7 +21,7 @@ const BlogNav = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-lg font-medium gold-text">
-            AI Prompt Engineering
+            Future AI Directory
           </Link>
           <div className="flex space-x-1">
             <Link 
