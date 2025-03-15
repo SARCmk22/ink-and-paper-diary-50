@@ -9,11 +9,16 @@ const Index = () => {
           <nav className="flex items-center justify-between">
             <a 
               href="https://futureaidirectory.com" 
-              className="text-lg font-medium gold-text"
+              className="flex items-center space-x-2 gold-text"
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Future AI Directory
+              <img 
+                src="/lovable-uploads/bfb6e00f-54e2-438a-839a-171372875a61.png" 
+                alt="Future AI Directory Logo" 
+                className="h-8 w-8" 
+              />
+              <span className="text-lg font-medium">Future AI Directory</span>
             </a>
             <div className="flex space-x-1">
               <Link 
@@ -44,6 +49,13 @@ const Index = () => {
       <main className="flex-1 flex items-center justify-center bg-black">
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
+            <div className="mx-auto w-20 h-20 mb-6">
+              <img 
+                src="/lovable-uploads/bfb6e00f-54e2-438a-839a-171372875a61.png" 
+                alt="Future AI Directory Logo" 
+                className="w-full h-full" 
+              />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight gold-text">
               Unlock the Full Potential of AI
             </h1>
