@@ -7,7 +7,7 @@ const Index = () => {
       <header className="py-6 px-4 md:px-6 border-b border-gray-100">
         <div className="container mx-auto">
           <nav className="flex items-center justify-between">
-            <div className="text-lg font-medium">AI Prompt Engineering</div>
+            <div className="text-lg font-medium">Future AI Directory</div>
             <div className="flex space-x-1">
               <Link 
                 to="/" 
