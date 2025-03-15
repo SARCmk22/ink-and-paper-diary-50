@@ -32,6 +32,12 @@ const Blog = () => {
       title: 'The Ultimate Guide to AI Prompt Engineering for Business Growth in 2025',
       description: 'Discover how proper prompt engineering can transform your AI interactions and boost productivity by up to 300%.',
       image: '/lovable-uploads/c29424c1-fb4d-4c7c-ab38-ff5ad5fa2656.png',
+    },
+    {
+      id: 'small-business-ai-tools',
+      title: 'AI Tools for Small Business: The Complete ROI Analysis for 2025',
+      description: 'Are you hesitant to invest in AI for your small business? Discover how a Bangalore-based startup achieved a 742% ROI on their AI implementation within 90 days while reducing operational costs by $127,000 annually.',
+      image: '/lovable-uploads/c29424c1-fb4d-4c7c-ab38-ff5ad5fa2656.png',
     }
   ];
 

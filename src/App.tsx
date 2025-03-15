@@ -10,6 +10,7 @@ import ChatGptVsClaude from "./pages/blog/ChatGptVsClaude";
 import AiImageGeneration from "./pages/blog/AiImageGeneration";
 import AdvancedPromptingTechniques from "./pages/blog/AdvancedPromptingTechniques";
 import PromptEngineeringGuide from "./pages/blog/PromptEngineeringGuide";
+import SmallBusinessAiTools from "./pages/blog/SmallBusinessAiTools";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/blog/ai-image-generation" element={<AiImageGeneration />} />
           <Route path="/blog/advanced-prompting-techniques" element={<AdvancedPromptingTechniques />} />
           <Route path="/blog/prompt-engineering-guide" element={<PromptEngineeringGuide />} />
+          <Route path="/blog/small-business-ai-tools" element={<SmallBusinessAiTools />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
