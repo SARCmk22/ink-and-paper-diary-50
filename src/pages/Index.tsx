@@ -49,7 +49,7 @@ const Index = () => {
       
       <footer className="border-t border-gray-200 py-6 text-center text-gray-500 text-sm">
         <div className="container px-4 md:px-6">
-          <p>© 2023 AI Prompt Engineering. All rights reserved.</p>
+          <p>© 2025 Future AI Directory. All rights reserved.</p>
         </div>
       </footer>
     </div>
