@@ -5,9 +5,10 @@ interface ModelStrengthsProps {
   title: string;
   items: string[];
   delay?: number;
+  ordered?: boolean;
 }
 
-const ModelStrengths = ({ title, items, delay = 0 }: ModelStrengthsProps) => {
+const ModelStrengths = ({ title, items, delay = 0, ordered = true }: ModelStrengthsProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -25,11 +26,19 @@ const ModelStrengths = ({ title, items, delay = 0 }: ModelStrengthsProps) => {
       }`}
     >
       <h3 className="text-xl font-semibold">{title}</h3>
-      <ol className="list-decimal pl-6 space-y-2">
-        {items.map((item, index) => (
-          <li key={index} className="text-gray-800">{item}</li>
-        ))}
-      </ol>
+      {ordered ? (
+        <ol className="list-decimal pl-6 space-y-2">
+          {items.map((item, index) => (
+            <li key={index} className="text-gray-800">{item}</li>
+          ))}
+        </ol>
+      ) : (
+        <ul className="list-disc pl-6 space-y-2">
+          {items.map((item, index) => (
+            <li key={index} className="text-gray-800">{item}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
