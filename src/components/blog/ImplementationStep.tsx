@@ -6,9 +6,10 @@ interface ImplementationStepProps {
   title: string;
   description: string;
   delay?: number;
+  numbered?: boolean;
 }
 
-const ImplementationStep = ({ number, title, description, delay = 0 }: ImplementationStepProps) => {
+const ImplementationStep = ({ number, title, description, delay = 0, numbered = true }: ImplementationStepProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -26,7 +27,11 @@ const ImplementationStep = ({ number, title, description, delay = 0 }: Implement
       }`}
     >
       <div className="flex gap-2">
-        <span className="font-medium">{number}.</span>
+        {numbered ? (
+          <span className="font-medium">{number}.</span>
+        ) : (
+          <span className="text-lg">•</span>
+        )}
         <div>
           <span className="font-medium">{title}</span> {description}
         </div>
