@@ -11,8 +11,8 @@ import ImplementationStep from '../components/blog/ImplementationStep';
 import PromptEngineeringStep from '../components/blog/PromptEngineeringStep';
 import ROIStats from '../components/blog/ROIStats';
 import AIToolCard from '../components/blog/AIToolCard';
-import ImplementationPhase from '../components/blog/ImplementationPhase';
 import BusinessCase from '../components/blog/BusinessCase';
+import ImplementationPhase from '../components/blog/ImplementationPhase';
 import DataTable from '../components/blog/DataTable';
 
 const Blog = () => {
@@ -21,7 +21,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       <BlogNav />
       
       <main className="pt-20">
@@ -33,7 +33,7 @@ const Blog = () => {
           <p className="mb-4">
             In today's AI-powered business landscape, choosing between ChatGPT and Claude
             isn't just a technical decision—it's a strategic one that directly impacts your bottom
-            line. Yet <strong>76% of businesses report using AI models that are poorly matched to their
+            line. Yet <strong className="gold-text">76% of businesses report using AI models that are poorly matched to their
             specific needs</strong>, resulting in:
           </p>
           
@@ -46,7 +46,7 @@ const Blog = () => {
           </ul>
           
           <p className="mb-4">
-            This misalignment costs the average mid-sized business approximately <strong>$127,000 in
+            This misalignment costs the average mid-sized business approximately <strong className="gold-text">$127,000 in
             lost productivity annually</strong>, according to recent IBM research.
           </p>
         </BlogSection>
@@ -61,12 +61,12 @@ const Blog = () => {
           <ComparisonCard title="Content Creation Capabilities" delay={300}>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <div className="font-medium">ChatGPT:</div>
-                <p className="text-gray-700">Excels at creative marketing copy, showing <strong>22% higher engagement rates</strong> in A/B testing</p>
+                <div className="font-medium gold-text">ChatGPT:</div>
+                <p className="text-gray-300">Excels at creative marketing copy, showing <strong className="gold-text">22% higher engagement rates</strong> in A/B testing</p>
               </div>
               <div className="space-y-2">
-                <div className="font-medium">Claude:</div>
-                <p className="text-gray-700">Delivers superior technical documentation with <strong>31% fewer accuracy errors</strong> in complex domains</p>
+                <div className="font-medium gold-text">Claude:</div>
+                <p className="text-gray-300">Delivers superior technical documentation with <strong className="gold-text">31% fewer accuracy errors</strong> in complex domains</p>
               </div>
             </div>
           </ComparisonCard>
@@ -74,12 +74,12 @@ const Blog = () => {
           <ComparisonCard title="Data Analysis Proficiency" delay={400}>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <div className="font-medium">ChatGPT:</div>
-                <p className="text-gray-700">Stronger at generating insightful visualizations and dashboards</p>
+                <div className="font-medium gold-text">ChatGPT:</div>
+                <p className="text-gray-300">Stronger at generating insightful visualizations and dashboards</p>
               </div>
               <div className="space-y-2">
-                <div className="font-medium">Claude:</div>
-                <p className="text-gray-700">More accurate at interpreting complex datasets and nuanced financial reports</p>
+                <div className="font-medium gold-text">Claude:</div>
+                <p className="text-gray-300">More accurate at interpreting complex datasets and nuanced financial reports</p>
               </div>
             </div>
           </ComparisonCard>
@@ -87,12 +87,12 @@ const Blog = () => {
           <ComparisonCard title="Communication Style" delay={500}>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <div className="font-medium">ChatGPT:</div>
-                <p className="text-gray-700">More conversational and adaptive to brand voice requirements</p>
+                <div className="font-medium gold-text">ChatGPT:</div>
+                <p className="text-gray-300">More conversational and adaptive to brand voice requirements</p>
               </div>
               <div className="space-y-2">
-                <div className="font-medium">Claude:</div>
-                <p className="text-gray-700">More precise and consistent in maintaining professional tone across enterprise communications</p>
+                <div className="font-medium gold-text">Claude:</div>
+                <p className="text-gray-300">More precise and consistent in maintaining professional tone across enterprise communications</p>
               </div>
             </div>
           </ComparisonCard>
@@ -100,12 +100,12 @@ const Blog = () => {
           <ComparisonCard title="Security Considerations" delay={600}>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <div className="font-medium">ChatGPT:</div>
-                <p className="text-gray-700">Offers more customization options for data handling</p>
+                <div className="font-medium gold-text">ChatGPT:</div>
+                <p className="text-gray-300">Offers more customization options for data handling</p>
               </div>
               <div className="space-y-2">
-                <div className="font-medium">Claude:</div>
-                <p className="text-gray-700">Demonstrates superior performance in maintaining context-specific compliance standards</p>
+                <div className="font-medium gold-text">Claude:</div>
+                <p className="text-gray-300">Demonstrates superior performance in maintaining context-specific compliance standards</p>
               </div>
             </div>
           </ComparisonCard>
@@ -845,7 +845,7 @@ const Blog = () => {
         <BlogSection title="Start Your Prompt Engineering Journey Today" delay={800}>
           <p className="mb-4">
             Don't let poor AI communication prevent your business from realizing the true potential
-            of today's AI tools. Visit <a href="#" className="text-blue-600 hover:underline">solutions.futureaidirectory.com/prompt-engineering</a> to access our comprehensive
+            of today's AI tools. Visit <a href="#" className="gold-text hover:underline">solutions.futureaidirectory.com/prompt-engineering</a> to access our comprehensive
             resources, including:
           </p>
           
@@ -866,12 +866,12 @@ const Blog = () => {
           </p>
           
           <p className="mb-6">
-            <a href="#" className="text-blue-600 hover:underline">Schedule a prompt engineering consultation</a> and receive our exclusive "AI
+            <a href="#" className="gold-text hover:underline">Schedule a prompt engineering consultation</a> and receive our exclusive "AI
             Prompt Engineering for Business Growth" playbook with 50 ready-to-use prompts for
             common business scenarios.
           </p>
           
-          <div className="mt-8 text-gray-500 text-sm">
+          <div className="mt-8 text-gray-400 text-sm">
             #PromptEngineering #AIStrategy #BusinessAI #ChatGPT #Claude #AIPrompts
             #ProductivityHacks #AIDirectory #BusinessSolutions #AIImplementation
           </div>

@@ -20,14 +20,14 @@ const ComparisonCard = ({ title, children, delay = 0 }: ComparisonCardProps) => 
 
   return (
     <div 
-      className={`mb-12 border border-gray-200 rounded-lg overflow-hidden transition-all duration-800 ease-in-out ${
+      className={`mb-12 border border-gray-800 rounded-lg overflow-hidden transition-all duration-800 ease-in-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <div className="bg-gray-50 p-4 border-b border-gray-200">
-        <h3 className="text-xl font-semibold">{title}</h3>
+      <div className="bg-gray-900 p-4 border-b border-gray-800">
+        <h3 className="text-xl font-semibold gold-text">{title}</h3>
       </div>
-      <div className="p-6 space-y-4">
+      <div className="p-6 space-y-4 bg-gray-950">
         {children}
       </div>
     </div>
