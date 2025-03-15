@@ -25,8 +25,13 @@ const PromptEngineeringStep = ({ number, title, description, delay = 0 }: Prompt
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <h3 className="text-xl font-semibold mb-2">{number}. {title}</h3>
-      <p className="text-gray-800">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 flex items-center">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white mr-3 text-sm">
+          {number}
+        </span>
+        <span className="gold-text">{title}</span>
+      </h3>
+      <p className="text-gray-800 ml-11">{description}</p>
     </div>
   );
 };

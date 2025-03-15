@@ -25,7 +25,7 @@
     --muted: 0 0% 92%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 0 0% 96%;
+    --accent: 43 74% 64%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
@@ -45,6 +45,8 @@
     --sidebar-accent-foreground: 0 0% 0%;
     --sidebar-border: 0 0% 90%;
     --sidebar-ring: 0 0% 0%;
+    
+    --gold: 43 74% 64%;
   }
 
   * {
@@ -77,6 +79,22 @@
   
   .glass-effect {
     @apply backdrop-blur-md bg-white/90 border border-white/20 shadow-sm;
+  }
+  
+  .gold-text {
+    @apply text-[#D4AF37];
+  }
+  
+  .gold-bg {
+    @apply bg-[#D4AF37];
+  }
+  
+  .gold-border {
+    @apply border-[#D4AF37];
+  }
+  
+  .gold-accent {
+    @apply text-[#D4AF37] hover:text-[#B8860B] transition-colors;
   }
   
   .animate-delay-100 {

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import BlogNav from '../components/blog/BlogNav';
 import BlogHeader from '../components/blog/BlogHeader';
@@ -10,6 +9,11 @@ import PromptingFramework from '../components/blog/PromptingFramework';
 import IndustryStrategy from '../components/blog/IndustryStrategy';
 import ImplementationStep from '../components/blog/ImplementationStep';
 import PromptEngineeringStep from '../components/blog/PromptEngineeringStep';
+import ROIStats from '../components/blog/ROIStats';
+import AIToolCard from '../components/blog/AIToolCard';
+import ImplementationPhase from '../components/blog/ImplementationPhase';
+import BusinessCase from '../components/blog/BusinessCase';
+import DataTable from '../components/blog/DataTable';
 
 const Blog = () => {
   useEffect(() => {
@@ -818,77 +822,3 @@ const Blog = () => {
             />
             
             <PromptEngineeringStep
-              number={4}
-              title="Format Control"
-              description="Structuring outputs for immediate implementation"
-              delay={400}
-            />
-            
-            <PromptEngineeringStep
-              number={5}
-              title="Feedback Integration"
-              description="Creating learning loops that continuously improve results through structured feedback"
-              delay={500}
-            />
-          </div>
-          
-          <p className="mb-4">
-            By following this framework, organizations report an average of 67% improvement in AI
-            output quality and 59% reduction in time spent refining results.
-          </p>
-        </BlogSection>
-        
-        <BlogSection title="Real-World Applications: Transform Your Business Processes" delay={600}>
-          <p className="mb-4">
-            Implement strategic prompt engineering in these key business areas:
-          </p>
-          
-          <ul className="list-disc pl-6 mb-6 space-y-2">
-            <li><strong>Customer Service</strong>: Create comprehensive response templates that maintain brand voice while addressing common inquiries</li>
-            <li><strong>Marketing</strong>: Develop campaign-specific prompt libraries that ensure consistent messaging across channels</li>
-            <li><strong>Product Development</strong>: Structure ideation sessions with constraint-based prompting to generate actionable innovations</li>
-            <li><strong>Operations</strong>: Build process optimization prompts that incorporate business-specific parameters and KPIs</li>
-            <li><strong>Strategy</strong>: Design scenario planning frameworks that systematically explore potential futures</li>
-          </ul>
-        </BlogSection>
-        
-        <BlogSection title="Get Started with Strategic AI Prompting" delay={700}>
-          <p className="mb-4">
-            Ready to transform how your organization leverages AI? Visit 
-            <a href="#" className="text-blue-600 hover:underline ml-1">solutions.futureaidirectory.com/prompt-engineering</a> to access:
-          </p>
-          
-          <ModelStrengths 
-            title="" 
-            items={[
-              "Business-specific prompt libraries for 12 industries",
-              "Prompt templates for 50+ common business tasks",
-              "Self-assessment tools to evaluate current AI utilization",
-              "Implementation roadmaps for enterprise-wide adoption"
-            ]}
-            ordered={false}
-            delay={100}
-          />
-          
-          <p className="mb-4 mt-6 font-medium">
-            Don't let your competitors outpace you with the same AI tools. Master the art and science
-            of strategic prompting to extract maximum value from your AI investments.
-          </p>
-          
-          <p className="mb-6">
-            <a href="#" className="text-blue-600 hover:underline">Book a prompt engineering workshop</a> for your team and receive our
-            exclusive "Strategic Prompting Playbook" with 200+ proven business prompts.
-          </p>
-          
-          <div className="mt-8 text-gray-500 text-sm">
-            #PromptEngineering #BusinessAI #AIStrategy #ProductivityTools
-            #AIImplementation #EnterpriseAI #AIDirectory #BusinessGrowth
-            #AIPrompts #StrategicPrompting
-          </div>
-        </BlogSection>
-      </main>
-    </div>
-  );
-};
-
-export default Blog;
